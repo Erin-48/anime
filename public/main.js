@@ -1,6 +1,15 @@
 $(document).ready(function () {
-  $("nav .nav-links > li").click(function (e) {
-    $("nav .nav-links > li").removeClass("active");
-    $(this).addClass("active");
+  $(".nav-links li a").mouseenter(function () {
+    $(this).next().slideDown();
+  });
+
+  $(".nav-links li").mouseleave(function () {
+    $(".sub-menu").slideUp();
+  });
+});
+
+$(document).ready(function () {
+  $(".menu .menu-item").click(function () {
+    $(".menu .dropdown").slideToggle();
   });
 });
