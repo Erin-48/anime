@@ -10,7 +10,7 @@ export class Nav extends Component {
             Ani<span>me</span>
           </p>
         </div>
-        <ul>
+        <ul className="nav-links">
           <li>
             <Link to="/">Homepage</Link>
           </li>
@@ -27,9 +27,9 @@ export class Nav extends Component {
         <div className="nav-icons">
           <ul>
             <li>
-              <Link>
+              <a href="#">
                 <i class="fa fa-search"></i>
-              </Link>
+              </a>
             </li>
             <li>
               <Link to="login">
