@@ -19,6 +19,22 @@ export class Topviews extends Component {
             topimg="https://preview.colorlib.com/theme/anime/img/sidebar/tv-1.jpg.webp"
             toptitle="Boruto: Naruto next generations"
           />
+          <Topicon
+            topimg="https://preview.colorlib.com/theme/anime/img/sidebar/tv-2.jpg.webp"
+            toptitle="The Seven Deadly Sins: Wrath of the Gods"
+          />
+          <Topicon
+            topimg="https://preview.colorlib.com/theme/anime/img/sidebar/tv-3.jpg.webp"
+            toptitle="Sword art online alicization war of underworld"
+          />
+          <Topicon
+            topimg="https://preview.colorlib.com/theme/anime/img/sidebar/tv-4.jpg.webp"
+            toptitle="Fate/stay night: Heaven's Feel I. presage flower"
+          />
+          <Topicon
+            topimg="https://preview.colorlib.com/theme/anime/img/sidebar/tv-5.jpg.webp"
+            toptitle="Fate stay night unlimited blade works"
+          />
         </div>
       </div>
     );

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Banner from "./Banner";
 import Live from "./Live";
+import Newcomment from "./Newcomment";
 import Popular from "./Popular";
 import Recent from "./Recent";
 import Topviews from "./Topviews";
@@ -21,6 +22,7 @@ export class Home extends Component {
             </div>
             <div className="col-lg-4 col-sm-12">
               <Topviews></Topviews>
+              <Newcomment></Newcomment>
             </div>
           </div>
         </div>

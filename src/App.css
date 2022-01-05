@@ -19,6 +19,7 @@ a:hover {
   text-decoration: none;
 }
 
+/*header - common in all pages*/
 header {
   background-color: #070720;
   padding-left: 90px;
@@ -145,7 +146,7 @@ header .menu .dropdown li a:hover {
   color: #222;
 }
 
-/*banner*/
+/*homepage banner*/
 .banner {
   padding: 50px 90px 0 90px;
   position: relative;
@@ -195,7 +196,7 @@ header .menu .dropdown li a:hover {
   margin-left: 5px;
 }
 
-/*trending, popular, recent, live sections*/
+/*trending, popular, recent, live sections in homepage*/
 .home-sec {
   margin-top: 60px;
   padding-left: 90px;
@@ -305,20 +306,23 @@ header .menu .dropdown li a:hover {
   font-family: Mulish, sans-serif;
 }
 
-/*sidebars*/
+/*sidebars in homepage*/
 /*top views icon*/
-.topviews {
+.topviews,
+.comment /*top views and new comment title*/ {
   margin-top: 60px;
   padding-right: 90px;
 }
 
-.topviews .title {
+.topviews .title,
+.comment .title {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
 }
 
-.topviews .title h2 {
+.topviews .title h2,
+.comment .title h2 {
   color: #fff;
   text-transform: uppercase;
   padding-left: 15px;
@@ -345,6 +349,7 @@ header .menu .dropdown li a:hover {
 
 .topviews .topicon {
   position: relative;
+  margin-bottom: 20px;
 }
 
 .topviews .topicon .ep {
@@ -374,10 +379,120 @@ header .menu .dropdown li a:hover {
 
 .topviews .topicon .toptitle {
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
+  left: 10px;
 }
 
-/*Footer*/
+.topviews .topicon .toptitle p {
+  color: #fff;
+  font-family: Mulish, sans-serif;
+  font-size: 18px;
+}
+
+/*new comment section*/
+/*its title style is the same as top views - see above*/
+.comment .comment-icon {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.comment .comment-icon .comment-text {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.comment .comment-icon .comment-text ul {
+  display: flex;
+}
+
+.comment .comment-icon .comment-text ul li {
+  list-style: none;
+  font-family: Mulish, sans-serif;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 10px;
+  font-size: 11px;
+  padding: 1px 10px;
+  border-radius: 10px;
+}
+
+.comment .comment-icon .comment-text .comment-title p {
+  font-family: Mulish, sans-serif;
+  color: #fff;
+  font-size: 18px;
+}
+
+.comment .comment-icon .comment-text .comment-views {
+  color: #b7b7b7;
+  font-family: Mulish, sans-serif;
+  font-size: 13px;
+}
+
+/*BLOG PAGE*/
+/*blog banner*/
+.blog-banner {
+  height: 300px;
+  background-image: url("https://preview.colorlib.com/theme/anime/img/normal-breadcrumb.jpg.webp");
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.blog-banner h1 {
+  font-family: Oswald, sans-serif;
+  font-size: 55px;
+}
+
+.blog-banner p {
+  font-family: Mulish, sans-serif;
+  font-size: 20px;
+}
+
+.blog-content {
+  padding: 0 90px;
+  margin-top: 60px;
+}
+
+.blog-content .blog-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.blog-content .blog-box img {
+  width: 100%;
+}
+
+.blog-content .blog-box .blog-text {
+  position: absolute;
+  bottom: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+.blog-content .blog-box .blog-text p {
+  font-family: Mulish, sans-serif;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.blog-content .blog-box .blog-text p i {
+  color: #e53637;
+  margin-right: 8px;
+}
+
+.blog-content .blog-box .blog-text h4 {
+  font-family: Mulish, sans-serif;
+  color: #fff;
+  font-size: 20px;
+}
+
+/*Footer - common in all pages*/
 /*footer nav icons style is written above with nav tag style*/
 footer {
   background-color: #070720;
