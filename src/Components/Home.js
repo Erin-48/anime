@@ -3,6 +3,7 @@ import Banner from "./Banner";
 import Live from "./Live";
 import Popular from "./Popular";
 import Recent from "./Recent";
+import Topviews from "./Topviews";
 import Trending from "./Trending";
 
 export class Home extends Component {
@@ -10,10 +11,19 @@ export class Home extends Component {
     return (
       <div>
         <Banner></Banner>
-        <Trending></Trending>
-        <Popular></Popular>
-        <Recent></Recent>
-        <Live></Live>
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-lg-8 col-sm-12">
+              <Trending></Trending>
+              <Popular></Popular>
+              <Recent></Recent>
+              <Live></Live>
+            </div>
+            <div className="col-lg-4 col-sm-12">
+              <Topviews></Topviews>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

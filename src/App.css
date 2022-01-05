@@ -31,31 +31,36 @@ nav {
   align-items: center;
 }
 
-nav .logo p {
+/*logo in navbar and footer*/
+nav .logo p,
+footer .logo p {
   font-weight: 600;
   color: #fff;
   font-size: 35px;
 }
 
-nav .logo p span {
+nav .logo p span,
+footer .logo p span {
   color: #e53637;
 }
 
+/*nav links in navbar and footer*/
 nav .nav-links,
-.nav-icons ul {
+.nav-icons ul,
+footer .nav-links {
   display: flex;
 }
 
 nav .nav-links li,
-.nav-icons ul li {
+.nav-icons ul li,
+footer .nav-links li {
   list-style: none;
-
   font-family: Mulish, sans-serif;
-  font-weight: 600;
 }
 
 nav .nav-links li a,
-.nav-icons ul li i {
+.nav-icons ul li i,
+footer .nav-links li a {
   text-decoration: none;
   color: #b7b7b7;
   padding: 20px;
@@ -68,10 +73,12 @@ nav .nav-links li a.active {
   color: #fff;
 }
 
-nav .nav-links li a:hover {
+nav .nav-links li a:hover,
+footer .nav-links li a:hover {
   color: #fff;
 }
 
+/*dropdown menu in navbar*/
 nav .nav-links .sub-menu {
   position: absolute;
   top: 56px;
@@ -92,6 +99,7 @@ nav .nav-links .sub-menu li a {
   padding: 5px 20px;
 }
 
+/*dropdown menu on click - second row in header section*/
 header .menu {
   background-color: #4c4c4c;
   padding: 10px;
@@ -137,6 +145,7 @@ header .menu .dropdown li a:hover {
   color: #222;
 }
 
+/*banner*/
 .banner {
   padding: 50px 90px 0 90px;
   position: relative;
@@ -186,14 +195,13 @@ header .menu .dropdown li a:hover {
   margin-left: 5px;
 }
 
+/*trending, popular, recent, live sections*/
 .home-sec {
   margin-top: 60px;
-  padding: 0 90px;
+  padding-left: 90px;
 }
 
 .home-sec .title {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
 }
@@ -207,6 +215,10 @@ header .menu .dropdown li a:hover {
   font-size: 28px;
 }
 
+.home-sec .title .col-md-4 {
+  text-align: right;
+}
+
 .home-sec .title a {
   color: #fff;
   text-transform: uppercase;
@@ -218,16 +230,6 @@ header .menu .dropdown li a:hover {
 .home-sec .title a i {
   margin-left: 5px;
   font-size: 16px;
-}
-
-.home-sec .icon-row {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
-}
-
-.home-sec .icon-row .product-item {
-  width: 30%;
 }
 
 .home-sec .icon-row .product-item .product-img {
@@ -301,4 +303,103 @@ header .menu .dropdown li a:hover {
 .home-sec .icon-row .product-item .product-info h5 a {
   color: #fff;
   font-family: Mulish, sans-serif;
+}
+
+/*sidebars*/
+/*top views icon*/
+.topviews {
+  margin-top: 60px;
+  padding-right: 90px;
+}
+
+.topviews .title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.topviews .title h2 {
+  color: #fff;
+  text-transform: uppercase;
+  padding-left: 15px;
+  font-family: "Oswald", sans-serif;
+  border-left: #e53637 4px solid;
+  font-size: 20px;
+}
+
+.topviews .title ul {
+  display: flex;
+}
+
+.topviews .title ul li {
+  list-style: none;
+  color: #b7b7b7;
+  font-family: Mulish, sans-serif;
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+.topviews .topicon img {
+  border-radius: 5px;
+}
+
+.topviews .topicon {
+  position: relative;
+}
+
+.topviews .topicon .ep {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #e53637;
+  border-radius: 5px;
+  font-family: Mulish, sans-serif;
+  font-size: 13px;
+  color: #fff;
+  padding: 2px 15px;
+  letter-spacing: 2px;
+}
+
+.topviews .topicon .view {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  background-color: #3d3d3d;
+  border-radius: 5px;
+  font-family: Mulish, sans-serif;
+  font-size: 13px;
+  color: #fff;
+  padding: 2px 15px;
+}
+
+.topviews .topicon .toptitle {
+  position: absolute;
+  bottom: 10px;
+}
+
+/*Footer*/
+/*footer nav icons style is written above with nav tag style*/
+footer {
+  background-color: #070720;
+  padding: 50px 90px 60px;
+  position: relative;
+  margin-top: 40px;
+}
+
+footer .scrollup {
+  background-color: #e53637;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: -21px;
+  left: 50%;
+}
+
+footer .scrollup a {
+  color: #fff;
+  font-size: 20px;
 }

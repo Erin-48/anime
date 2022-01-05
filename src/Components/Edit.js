@@ -5,14 +5,16 @@ export class Trending extends Component {
   render() {
     return (
       <div className="home-sec container-fluid">
-        <div className="row title">
-          <div className="col-md-8">
-            <h2>Recently Added Shows</h2>
-          </div>
-          <div className="col-md-4">
-            <a href="#">
-              View all <i class="fa fa-long-arrow-right"></i>
-            </a>
+        <div className="row">
+          <div className="title">
+            <div className="col-md-8">
+              <h2>Recently Added Shows</h2>
+            </div>
+            <div className="col-md-4">
+              <a href="#">
+                View all <i class="fa fa-long-arrow-right"></i>
+              </a>
+            </div>
           </div>
         </div>
         <div className="row icon-row">
