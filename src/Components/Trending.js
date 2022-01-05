@@ -4,7 +4,7 @@ import Showicon from "./Showicon";
 export class Trending extends Component {
   render() {
     return (
-      <div className="trending container-fluid">
+      <div className="home-sec container-fluid">
         <div className="row">
           <div className="col-md-8">
             <div className="title">
